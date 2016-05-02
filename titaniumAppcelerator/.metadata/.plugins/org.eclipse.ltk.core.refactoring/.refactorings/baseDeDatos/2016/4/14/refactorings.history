@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Win1.js&apos; to &apos;ui&apos;" description="Move &apos;Win1.js&apos; to &apos;ui&apos;" destination="Resources/ui" element1="Resources/Win1.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1460060167428" updateReferences="true"/>
+</session>

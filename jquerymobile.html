@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery Aplication</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+	<section id="page1" data-role="page">
+		<header data-role="header">
+			<h1>Pagina 1</h1>
+		</header>
+		<div data-role="content">
+			<div class="ui-grib-b">
+				<div class="ui-grib-a">
+					<a href="#lista-anidadas">Listas Anidadas</a>
+				</div>
+				<div class="ui-block-b"> 
+					<a href="#barra herramientas"> Barra de Herramientas</a>
+				</div>
+				<div class="ui-block-c"> 
+					<a href="#formularios">Formularios</a>
+				</div>
+				<div class="ui-grib-a">
+					<a href="#lista-anidadas">Listas Anidadas</a>
+				</div>
+				<div class="ui-block-b"> 
+					<a href="#barra herramientas"> Barra de Herramientas</a>
+				</div>
+				<div class="ui-block-c"> 
+					<a href="#formularios">Formularios</a>
+				</div>
+			</div>
+		</div>
+		<footer data-role="footer">
+			<h2>Pie de Pagina</h2>
+		</footer>
+	</section>
+	<section id="listas-anidadas" data-role="page">
+		<header data-role="header">
+			<h1>Listas Anidadas</h1>
+		</header>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li>
+					<a href="#">Colores<span class="ui-li-count">3</span>
+					</a>
+					<ul>
+						<li>Rojo</li>
+						<li>Amarillo</li>
+						<li>Blanco</li>
+					</ul>
+				</li>
+				<li><a href="#">Ciudades<span class="ui-li-count">2</span></a>
+					<ul>
+						<li>Madrid</li>
+						<li>Barcelona</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="barra-herramientas" data-role="page">
+		<header data-role="header">
+			<h1>Barra de Herramientas</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li>
+						<a href="barra-herramientas" class="ui-btn-active">Inicio</a>
+					</li>
+					<li>
+						<a href="#">Proyectos</a>
+					</li>
+					<li>
+						<a href="#">Acerca de</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div data-role="content">
+			<p>Contenido de la Sección de Inicio</p>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<h2>Pie de Barra de Herramientas</h2>
+		</footer>
+	</section>
+	<section id="formilarios" data-role="page">
+		<header data-role="header">
+			<h1>Formilarios</h1>
+		</header>
+		<div class="content" data-role="content">
+			<form id="form1" action="#" method="post">
+				<div data-role="fieldcontain">
+					<label for="nombre">Como se llama?</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre Completo">
+					<label for="email">email</label>
+					<input type="email" id="email" name="email">
+					<label for="movil">móvil</label>
+					<input type="phone" id="movil" name="movil">
+					<label for="numaño">Num Años Trabajados</label>
+					<input type="range" id="numaño" name="numaño" min="0" max="0">
+					<label for="viajar">Disponibilidad Para Viajar</label>
+					<select name="viajar" id="viajar" data-role="slider">
+						<option value="1">Si</option>
+						<option value="0">No</option>
+					</select>
+					<fieldset data-role="controlgroup">
+						<legend>Idiomas Que Es Capaz De Leer:</legend>
+						<label for="ingles">Inglés</label>
+						<input type="checkbox" id="ingles" name="ingles">
+						<label for="español">Español</label>
+						<input type="checkbox" id="español" name="español">
+						<label for="aleman">Alemán</label>
+						<input type="checkbox" id="aleman" name="aleman">
+					</fieldset>
+					<label for="estadocivil">Estado Civil</label>
+					<select name="estadocivil" id="estadocivil" data-native-menu="false">
+						<option value="0">Soltero</option>
+						<option value="1">Casado</option>
+						<option value="2">Divorciado</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<h2>Pie de Formularios</h2>
+		</footer>
+	</section>
+</body>
+</html>
